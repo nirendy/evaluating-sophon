@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 import argparse
 import sys
-sys.path.append('../')
+# sys.path.append('../')
 def args_parser():
     parser = argparse.ArgumentParser(description='train N shadow models')
     parser.add_argument('--bs', default=200, type=int)
@@ -33,7 +33,7 @@ from timm.models import create_model
 from tqdm import tqdm
 import torch
 from torch import nn, optim
-from utils import get_dataset, test_accuracy
+from sophon.classification.utils import get_dataset, test_accuracy
 import wandb
 import timm
 

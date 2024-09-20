@@ -24,7 +24,7 @@ import learn2learn as l2l
 from torch.utils.data import DataLoader, Dataset
 import torch.nn.init as init
 import csv
-from lib import VGG, make_layers, cfg
+from sophon.classification.model import VGG, make_layers, cfg
 from PIL import Image
 from typing import (
     Generic,

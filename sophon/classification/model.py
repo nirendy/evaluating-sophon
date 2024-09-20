@@ -10,7 +10,7 @@ from torchvision.models.resnet import BasicBlock, Bottleneck
 def resnet18(pretrained=False, **kwargs):
     model = ResNet(BasicBlock, [2, 2, 2, 2], **kwargs)
     if pretrained:
-        # 加载预训练权重
+        # 加载预训练权重 
         model.load_state_dict(model_zoo.load_url('https://download.pytorch.org/models/resnet18-5c106cde.pth'))
     return model
 
